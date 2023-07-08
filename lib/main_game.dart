@@ -14,6 +14,8 @@ class MainGame extends FlameGame with HasKeyboardHandlerComponents {
 
   @override
   Future<void> onLoad() async {
+    camera.viewport = FixedResolutionViewport(Vector2(1280, 720));
+
     add(_world);
     add(_player);
 
